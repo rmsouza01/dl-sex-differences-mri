@@ -1,0 +1,12 @@
+paths:
+  images_path: "../Data/Reg-SS-cropped"
+  folds_path:  "../Data/5-fold-CV-stratified"
+  out_path:    "../Data/output"
+files:
+  train_log: "train_log.txt"
+  best_model_prefix: "vgg_sex"
+
+params:
+  lr: 1e-4
+  epochs: 3
+  batch_size: 1
