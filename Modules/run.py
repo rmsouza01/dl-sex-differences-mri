@@ -1,10 +1,10 @@
 import hydra
-from src import run_cross_validation
+from src import run_cross_validation_age
 
 
 @hydra.main(version_base=None, config_path="../conf", config_name="config")
 def main(cfg):
-    run_cross_validation(
+    run_cross_validation_age(
         cfg.paths.images_path,
         cfg.paths.folds_path,
         cfg.paths.out_path,
